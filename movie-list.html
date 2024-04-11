@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta class="description"
+            content="iFliz es una web para compartir videos o ver peliculas">
+        <link rel="shortcut icon" href="./ifliz.png"
+            type="image/png+xml">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="./assets/js/global.js" defer></script>
+        <script src="./assets/js/movie-list.js" type="module"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="./index.html" class="logo">
+                <img src="./assets/images/ifliz.png" width="80" height="32"
+                    alt="Logo del home iFliz">
+            </a>
+
+            <div class="search-box" search-box>
+                <div class="search-wrapper" search-wrapper>
+                    <input type="text" name="search"
+                        placeholder="Busca una Pelicula"
+                        aria-label="Busca Peliculas"
+                        class="search-field" autocomplete="off" search-field>
+
+                    <img src="./assets/images/search.png" width="24" height="24"
+                        alt="Buscar" class="leading-icon">
+                </div>
+                <button class="search-btn" search-toggle>
+                    <img src="./assets/images/close.png" width="24" height="24"
+                        alt="close search box">
+                </button>
+
+            </div>
+            <button class="search-btn" search-toggle menu-close>
+                <img src="./assets/images/search.png" width="24" height="24"
+                    alt="abrir search box ">
+            </button>
+            <button class="menu-btn" menu-btn menu-toggler>
+                <img src="./assets/images/menu.png" width="24" height="24"
+                    class="menu" alt="abrir menu">
+                <img src="./assets/images/menu-close.png" width="24" height="24"
+                    class="close" alt="cerrar menu">
+            </button>
+        </header>
+        <main>
+            <nav class="sidebar" sidebar></nav>
+            <div class="overlay" overlay menu-toggler></div>
+
+            <article class="container" page-content>
+
+                <!--Lista de peliculas-->
+
+            </article>
+        </main>
+    </body>
+</html>
